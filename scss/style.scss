@@ -4,3 +4,229 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.gift__button{
+	width: 198px;
+	height: 45px;
+	border-radius: 4px;
+	background: #fff;
+	border: 2px solid #5e2367;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Suisse Intl";
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+	color: #070707;
+	img{
+		margin-right: 10px;
+	}
+	&:hover{
+		cursor: pointer;
+		transition: 0.3s;
+		opacity: 0.8;
+	}
+	&-color--2{
+		border: 2px solid #e12954;
+	}
+	&-color--3{
+		border: 2px solid #f47913;
+	}
+	&-color--4{
+		border: 2px solid #f8cf1e;
+	}
+	&-color--5{
+		border: 2px solid #f5d1fb;
+		background: #f5d1fb;
+	}
+	&-color--6{
+		border: 2px solid #ffc2d0;
+		background: #ffc2d0;
+	}
+	&-color--7{
+		border: 2px solid #ffcca1;
+		background: #ffcca1;
+	}
+	&-color--8{
+		border: 2px solid #fff3c2;
+		background: #fff3c2;
+	}
+	&-color--9{
+		border: 2px solid #5e2367;
+		background: #5e2367;
+		color: #fff;
+	}
+	&-color--10{
+		border: 2px solid #e12954;
+		background: #e12954;
+		color: #fff;
+	}
+	&-color--11{
+		border: 2px solid #f47913;
+		background: #f47913;
+		color: #fff;
+	}
+	&-color--12{
+		border: 2px solid #f8cf1e;
+		background: #f8cf1e;
+		color: #070707;
+	}
+}
+.gift__section{
+	max-width: 375px;
+	width: 100%;
+	border-radius: 16px;
+	background: #f1f0f9;
+	border: 1px solid #d4d4d4;
+	box-shadow: 15px 15px 55px rgba(0, 0, 0, 0.16);
+	.head{
+		background-color: #fff;
+		border-radius: 16px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		padding: 0 17px;
+		font-family: "Suisse Intl";
+		font-weight: bold;
+		font-size: 16px;
+		text-align: left;
+		color: #000;
+		img{
+			margin-left: 10px;
+			margin-right: 14px;
+			width: 25px;
+		}
+		button{
+			margin-left: auto;
+			background-color: transparent;
+			border: 0;
+			cursor: pointer;
+			img{
+				width: 15px;
+				margin: 0;
+			}
+		}
+	}
+	.body{
+		padding: 17px 25px;
+		background: url('../images/icons/info.svg') right 24px top 11px no-repeat;
+		h3{
+			margin: 0 0 15px;
+			font-family: "Suisse Intl";
+			font-weight: bold;
+			font-size: 14px;
+			text-align: left;
+			color: #000;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				position: relative;
+				padding-left: 31px;
+				margin-bottom: 10px;
+				font-family: "Suisse Intl";
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 16px;
+				text-align: left;
+				color: #393939;
+				padding-top: 3px;
+				div{
+					position: absolute;
+					left: 0;
+					top: 0;
+					margin-right: 10px;
+					width: 21px;
+					height: 21px;
+					background: #f47913;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-family: "Suisse Intl";
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 18px;
+					text-align: left;
+					color: #fff;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.footer{
+		background-color: #fff;
+		border-radius: 16px;
+		padding: 22px 24px;
+		.level{
+			.heading{
+				font-family: "Suisse Intl";
+				font-weight: normal;
+				font-size: 12px;
+				text-align: left;
+				color: #fff;
+				border-radius: 6px;
+				background: #5e2367;
+				padding: 12px 17px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 18px;
+				span{
+					font-family: "Suisse Intl";
+					font-weight: bold;
+					font-size: 12px;
+					text-align: left;
+					color: #f8cf1e;
+					text-transform: uppercase;
+				}
+			}
+			.item{
+				display: flex;
+				align-items: center;
+				margin: 18px 0;
+				.img{
+					width: 55px;
+					height: 55px;
+					flex: 0 1 auto;
+					border: 1px solid #DCDCDC;
+					border-radius: 5px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-right: 17px;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				.title{
+					text-decoration: none;
+					font-family: "Suisse Intl";
+					font-weight: bold;
+					font-size: 13px;
+					line-height: 22px;
+					text-align: left;
+					color: #393939;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+.gift__popup{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	.gift__section{
+		margin-bottom: 30px;
+		display: none;
+	}
+	.gift__button{
+		margin-left: auto;
+	}
+}
