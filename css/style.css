@@ -1,9 +1,15 @@
-.absoluteCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+@font-face {
+  src: url("../fonts/SuisseIntl-Regular.woff2") format("woff2");
+  font-family: "Suisse Intl";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/SuisseIntl-Bold.woff2") format("woff2");
+  font-family: "Suisse Intl";
+  font-weight: bold;
+  font-style: normal;
 }
 
 .gift__button {
