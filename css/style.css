@@ -109,6 +109,7 @@
   border: 1px solid #d4d4d4;
   -webkit-box-shadow: 15px 15px 55px rgba(0, 0, 0, 0.16);
           box-shadow: 15px 15px 55px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
 }
 
 .gift__section .head {
@@ -145,6 +146,11 @@
 .gift__section .head button img {
   width: 15px;
   margin: 0;
+}
+
+.gift__section .outer__bodyFooter {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 
 .gift__section .body {
@@ -240,6 +246,7 @@
   text-align: left;
   color: #f8cf1e;
   text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .gift__section .footer .level .item {

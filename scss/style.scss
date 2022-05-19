@@ -88,6 +88,7 @@
 	background: #f1f0f9;
 	border: 1px solid #d4d4d4;
 	box-shadow: 15px 15px 55px rgba(0, 0, 0, 0.16);
+	overflow: hidden;
 	.head{
 		background-color: #fff;
 		border-radius: 16px;
@@ -115,6 +116,10 @@
 				margin: 0;
 			}
 		}
+	}
+	.outer__bodyFooter{
+		max-height: calc(100vh - 200px);
+		overflow-y: auto;
 	}
 	.body{
 		padding: 17px 25px;
@@ -189,6 +194,7 @@
 					text-align: left;
 					color: #f8cf1e;
 					text-transform: uppercase;
+					margin-right: 10px;
 				}
 			}
 			.item{
@@ -228,7 +234,7 @@
 	}
 }
 .gift__popup{
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 20px;
 	.gift__section{
